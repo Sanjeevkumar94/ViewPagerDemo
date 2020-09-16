@@ -19,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tabLayout = findViewById(R.id.tab_layout);
-        viewPager = findViewById(R.id.view_pager_property_list);
+        toolbar = findViewById(R.id.my_toolbar);
+        tabLayout = findViewById(R.id.tabLayout);
+        viewPager = findViewById(R.id.myViewPager);
+       setSupportActionBar(toolbar);
 
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
